@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+    <h1>BMI calculator</h1>
+    <div class="container">
+        <div class="cm"><input type="range" max="250" min="10" class="range" id="CM"  oninput="this.nextElementSibling.innerHTML = this.value +' cm' "> <h3 class="cmResult">100cm</h3> </div>
+        <div class="kg"><input type="range" max="200" min="10" class="range" id="KG" oninput="this.nextElementSibling.innerHTML = this.value  +' kg'">  <h3 class="kgResult">100kg</h3> </div>
+        <div class="resultContainer">
+            <p class="result">BMI</p>
+            <p class="status">normal</p>
+        </div>
+    </div>
+</header>
+
+</body>
+<script src="script.js"></script>
+</html>
